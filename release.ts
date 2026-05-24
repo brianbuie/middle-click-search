@@ -17,9 +17,8 @@ writeFileSync('public/manifest.json', JSON.stringify(manifest, null, 2));
 
 const run = (cmd: string) => execSync(cmd, { stdio: 'inherit' });
 run('git add package.json public/manifest.json');
-run(`git commit -m "Release ${tag}"`);
+run(`git commit -m "${tag}"`);
 run(`git tag ${tag}`);
-run('git push');
-run('git push --tags');
+run(`git push origin HEAD ${tag}`);
 
 console.log(`Done. Tag ${tag} pushed.`);
