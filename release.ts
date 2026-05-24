@@ -19,6 +19,7 @@ const run = (cmd: string) => execSync(cmd, { stdio: 'inherit' });
 run('git add package.json public/manifest.json');
 run(`git commit -m "Release ${tag}"`);
 run(`git tag ${tag}`);
-run('git push --follow-tags');
+run('git push');
+run('git push --tags');
 
 console.log(`Done. Tag ${tag} pushed.`);
