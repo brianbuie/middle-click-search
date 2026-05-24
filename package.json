@@ -1,6 +1,6 @@
 {
   "name": "middle-click-search",
-  "version": "1",
+  "version": "2",
   "type": "module",
   "engines": {
     "node": "24"

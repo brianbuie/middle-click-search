@@ -2,7 +2,7 @@
   "name": "Middle Click Search",
   "description": "Use middle mouse button to search google for highlighted text",
   "manifest_version": 3,
-  "version": "1",
+  "version": "2",
   "content_scripts": [
     {
       "matches": [
